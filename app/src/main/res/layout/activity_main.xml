@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/main_circle_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="75dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:civ_border_overlay="false"
+        app:civ_border_width="3dp"
+        app:civ_border_color="#d3d3d3"
+        android:src="@drawable/shiritori"/>
+
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="@string/play_game"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bazzi"
+        android:background="@drawable/bg_button_custom"
+        android:layout_marginTop="90dp"
+        app:layout_constraintTop_toBottomOf="@+id/main_circle_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_explain"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="@string/game_explain"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bazzi"
+        android:background="@drawable/bg_button_custom"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_play"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_record"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="@string/game_record"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bazzi"
+        android:background="@drawable/bg_button_custom"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_explain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/game_version"
+        android:textSize="14sp"
+        android:textColor="#C3C3C3"
+        android:fontFamily="@font/bazzi"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
